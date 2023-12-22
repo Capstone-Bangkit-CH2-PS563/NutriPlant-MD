@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.ScanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin20"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin25"
+            android:layout_marginTop="@dimen/margin30"
+            android:text="Scan"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imgResult"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin40"
+            android:src="@drawable/img_empty" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginHorizontal="@dimen/margin20"
+            tools:text="Carrot"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            style="@style/textMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_marginHorizontal="@dimen/margin20"
+            tools:text="30 kkal (72gr)"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            style="@style/textMedium"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:text="Manfaat"
+            android:textSize="16sp"
+            style="@style/textMedium"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginHorizontal="@dimen/margin20"
+            android:padding="@dimen/margin15"
+            android:background="@drawable/bg_manfaat"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvManfaat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="5"
+                tools:text="Manfaat"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
